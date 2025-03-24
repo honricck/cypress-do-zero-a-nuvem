@@ -143,7 +143,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     })
   })
   
-  it.only('seleciona um arquivo para qual foi dado um alias',()=>{
+  it('seleciona um arquivo para qual foi dado um alias',()=>{
     cy.fixture('example.json').as('sampleFile')
     cy.get('#file-upload')
       .selectFile('@sampleFile')
@@ -151,6 +151,5 @@ describe('Central de Atendimento ao Cliente TAT', () => {
         expect(input[0].files[0].name).to.equal('example.json')
       })
     })
-  
-    
+   
 })
