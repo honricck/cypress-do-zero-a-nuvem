@@ -4,6 +4,7 @@ module.exports = defineConfig({
   viewportHeight: 880,
   viewportWidth: 1280,
   e2e: {
-    specPattern: 'cypress/e2e/CAC-TAT.cy.js' // ou o caminho correto dos seus arquivos de teste
+    specPattern: ['cypress/e2e/CAC-TAT.cy.js','cypress/e2e/privacyPolicy.cy.js']
   },
 })
+
